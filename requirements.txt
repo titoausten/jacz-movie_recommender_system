@@ -1,0 +1,12 @@
+pandas
+numpy
+nltk
+contractions
+notebook
+python-box==6.0.2
+pyYAML
+ensure
+joblib
+types-PyYAML
+requests
+streamlit

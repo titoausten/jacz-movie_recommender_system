@@ -1,0 +1,26 @@
+artifacts_root: artifacts
+
+
+data_preprocessing:
+  root_dir: artifacts/data_preprocessing
+  source_data_path: artifacts/data_ingestion/tmdb_5000_movies.csv
+  local_data_path: artifacts/data_preprocessing/data-v1.0.csv
+  movies_list_bin: artifacts/data_preprocessing/movies-v1.0.joblib
+  important_feature: id
+  important_feature1: title
+  important_feature2: tagline
+  important_feature3: overview
+  new_feature: description
+
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  source_data_path: artifacts/data_preprocessing/data-v1.0.csv
+  vector_similarity_path: artifacts/data_transformation/vector_similarity-v1.0.joblib
+
+
+recommendation:
+  movies_list_path: artifacts/data_preprocessing/movies-v1.0.joblib
+  vector_similarity_path: artifacts/data_transformation/vector_similarity-v1.0.joblib
+  movie_id_url: https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US
+  poster_url: https://image.tmdb.org/t/p/w500/
