@@ -5,7 +5,7 @@ from src.utils.common import set_background
 
 
 def main():
-    st.set_page_config(page_title="JacZ Movie Recommender")
+    st.set_page_config(page_title="JacZ Movie Recommender", page_icon="🎦")
     set_background('artifacts/images/background.jpg')
     st.header('Movie Recommender System by JacZ')
 
