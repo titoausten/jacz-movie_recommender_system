@@ -5,7 +5,7 @@ import contractions
 import re
 import nltk
 nltk.download('averaged_perceptron_tagger')
-nltk.download('punkt')
+nltk.download('punkt_tab')
 from nltk.tokenize import word_tokenize
 nltk.download('stopwords')
 from nltk.corpus import stopwords
